@@ -50,7 +50,10 @@ jobs:
           name: node-app
 
       - name: List downloaded artifacts
-        run: ls -l ./node-app
+        run: ls -la
+
+      - name: List content of node-app
+        run: ls -la ./node-app
 
       - name: "Deploy to Azure Web App"
         uses: azure/webapps-deploy@v2
