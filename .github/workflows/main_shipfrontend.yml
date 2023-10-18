@@ -27,9 +27,6 @@ jobs:
           npx ng build --prod
           npm run test --if-present
 
-      - name: List build artifacts
-        run: ls -l ./dist/fetch-data-ang
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
@@ -49,19 +46,6 @@ jobs:
         with:
           name: node-app
           path: ./node-app
-
-      - name: List current directory
-        run: /bin/ls -la
-        shell: bash
-
-      - name: Echo statement
-        run: echo "this is a test"
-
-      - name: List content of node-app
-        run: ls -la ./node-app
-
-      - name: Print working directory
-        run: pwd
 
       - name: "Deploy to Azure Web App"
         uses: azure/webapps-deploy@v2
