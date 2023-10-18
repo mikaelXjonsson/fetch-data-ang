@@ -54,4 +54,4 @@ jobs:
           app-name: "shipfrontend"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_961A7978D3B94ADBADAD35689E992416 }}
-          package: ./node-app/
+          package: ./node-app/dist/fetch-data-ang
