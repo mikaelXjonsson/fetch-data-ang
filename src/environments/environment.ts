@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // Sträng för att testa mot Azure API
+  apiUrl: 'https://mjhomeapi.azurewebsites.net'
+
+  // Sträng för att testa mot lokal API
+  // apiUrl: 'https://localhost:7101'
 };
 
 /*
